@@ -9,5 +9,7 @@
 
 ##other solutions
 def round_to_next(n)
-  n + (-n) % 5
+  n + (-n % 5)
 end
+#modulo takes the sign of the devisor which yields a positive result
+# still not sure why it behave differently when negative
