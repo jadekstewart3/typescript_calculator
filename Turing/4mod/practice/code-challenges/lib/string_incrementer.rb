@@ -13,7 +13,6 @@ def increment_string(string)
   #   extracted_ints.join + "#{(int_array.join.to_i + 1)}"
   # end
   int_match = string.match(/(\d+)$/)
-  require 'pry'; binding.pry
   if int_match
     numeric_part = int_match[0]
     incremented_numeric_part = (numeric_part.to_i + 1).to_s.rjust(numeric_part.length, "0")
