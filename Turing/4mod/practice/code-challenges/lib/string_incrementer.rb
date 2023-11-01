@@ -20,3 +20,9 @@
 # if there is an integer at the end of the string
 ## sub the numeric part for the next succinct integer
 
+#another solution
+def increment_string(input)
+  input.sub(/\d*$/) { |n| n.empty? ? 1 : n.succ }
+end
+# /\d*$/ matches zero or more digits at the end of a string
+##.succ is another method to increment strings
