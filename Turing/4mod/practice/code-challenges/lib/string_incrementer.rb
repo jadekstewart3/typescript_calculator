@@ -12,4 +12,12 @@ def increment_string(string)
   # else
   #   extracted_ints.join + "#{(int_array.join.to_i + 1)}"
   # end
+  int_match = string.match(/(\d+)$/)
+  if int_match
+    numeric_part = int_match[0]
+    incremented_numeric_part = (numeric_part.to_i + 1).to_s.rjust(numeric_part.length, "0")
+    string.sub("#{numeric_part}", "#{incremented_numeric_part}")
+  else
+    string << "1"
+  end
 end
