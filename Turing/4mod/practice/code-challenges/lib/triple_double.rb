@@ -78,7 +78,6 @@
 
 def triple_double(num1,num2)
   (0..9).each do |i| 
-    
     return 1 if num1.to_s.include?(i.to_s*3) && num2.to_s.include?(i.to_s*2)
   end
   0

@@ -12,7 +12,7 @@ RSpec.describe "Merge Sorted" do
   end
 
   it "returns as expected with an empty array" do 
-     nums1 = [1] 
+    nums1 = [1] 
     nums2 = []
     m = 1
     n = 0

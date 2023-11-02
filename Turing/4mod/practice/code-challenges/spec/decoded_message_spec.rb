@@ -1,5 +1,6 @@
 require "pry"
 require "./lib/decoded_message"
+
 RSpec.describe "decode message" do 
   it "returns the decoded string message" do 
     expect(decode("svool")).to eq("hello")
