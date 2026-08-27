@@ -5,7 +5,6 @@ Animal Shelter Management System
 This program manages a small animal shelter's animals. Users can add new
 animals, adopt an animal, or view all animals that currently reside in the
 shelter.
-
 """
 #import abstract base class
 from abc import ABC, abstractmethod
@@ -59,8 +58,8 @@ class Animal(ABC):
         ...
 
 
+#A dog available for adoption from the shelter.
 class Dog(Animal):
-    #A dog available for adoption from the shelter.
 
     #Initialize a dog, fixing its species as 'Dog'.
     def __init__(self, name, age, breed, color):
@@ -211,7 +210,7 @@ def adopt_animal():
         print(animal.speak())
 
 
-#Run the interactive shelter menu until the user chooses to exit.
+#Run the shelter menu until the user chooses to exit.
 def main_menu():
     while True:
         print("\n--- Main Menu ---")
