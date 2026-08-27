@@ -66,8 +66,8 @@ while True:
         break
       elif choice == 1:
         add_animal
-      # elif choice == 2:
-      #   view_animals()
+      elif choice == 2:
+        view_animals()
       # elif choice == 3:
       #   adopt_animal()
     else:
@@ -117,3 +117,16 @@ while True:
       while cat_breed == "":
         cat_breed = input("Breed cannot be empty. Please enter a breed: ")
       new_cat.breed = cat_breed
+      
+    def view_animals():
+      if not resident_animals:
+          print("There are currently no animals in the shelter!")
+      for animal in resident_animals:
+          print(f"{animal.species}:")
+          print(f"Name: {animal.name}")
+          print(f"Age: {animal.age}")
+          print(f"Breed: {animal.breed}")
+          print(f"Color: {animal.color}")
+          print("-------------------------------")
+          
+    
